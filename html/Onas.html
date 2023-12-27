@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link type="Image/x-icon" href="/image/fav.ico" rel="icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous" defer></script>
+    <script src="../scripts/app.js" defer></script>
+    <title>MYSHOP | О нас</title>
+</head>
+<body class="body">
+<div class="main">
+    <header class="header">
+        <div class="name"  onclick="location.href='../index.html'">MYSHOP</div>
+        <div class="navigate">
+            <div class="nav_item" onclick="location.href='../index.html'">Каталог</div>
+            <div class="nav_item" onclick="location.href='Onas.html'">О нас</div>
+            <div class="nav_item" onclick="location.href='Kontakts.html'">Контакты</div>
+            <div class="nav_item" onclick="location.href='Help.html'">Помощь</div>
+        </div>
+        <div class="cont_btn">
+            <div class="btn_korz"  onclick="location.href='Korzina.html'">
+                <img src="../image/Shop.svg" alt="Карзина" width="40px" height="30px">
+            </div>
+            <div class="btn_burger" onclick="document.getElementsByClassName('burger').item(0).style = 'display:grid'; document.getElementsByClassName('btn_burger').item(0).style = 'display:none'">
+                <img src="../image/burger.svg" alt="Корзина" width="40px" height="30px">
+            </div>
+        </div>
+    </header >
+    <div class="burger" style="display: none">
+        <div class="btn_burger_cont">
+            <div class="btn_burger" onclick="document.getElementsByClassName('btn_burger').item(0).style = 'display:grid'; document.getElementsByClassName('burger').item(0).style = 'display:none'">
+                <img src="../image/burger.svg" alt="Корзина" width="40px" height="30px">
+            </div>
+        </div>
+        <div class="nav_item" onclick="location.href='../index.html'">Каталог</div>
+        <div class="nav_item" onclick="location.href='Onas.html'">О нас</div>
+        <div class="nav_item" onclick="location.href='Kontakts.html'">Контакты</div>
+        <div class="nav_item" onclick="location.href='Help.html'">Помощь</div>
+    </div>
+    <div class="content">
+
+    </div>
+    <footer class="footer">
+        <div>© 2023 MYSHOP - All rights reserved.</div>
+    </footer>
+</div>
+</body>
+</html>

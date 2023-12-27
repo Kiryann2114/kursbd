@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link type="Image/x-icon" href="/image/fav.ico" rel="icon">
+    <script src="../node_modules/socket.io-client/dist/socket.io.js" defer></script>
+    <script src="../scripts/Korz.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous" defer></script>
+    <script src="../scripts/app.js" defer></script>
+    <title>MYSHOP | Корзина</title>
+</head>
+<body class="body">
+<div class="main">
+    <header class="header">
+        <div class="name" onclick="location.href='../index.html'">MYSHOP</div>
+        <div class="navigate">
+            <div class="nav_item" onclick="location.href='../index.html'">Каталог</div>
+            <div class="nav_item" onclick="location.href='Onas.html'">О нас</div>
+            <div class="nav_item" onclick="location.href='Kontakts.html'">Контакты</div>
+            <div class="nav_item" onclick="location.href='Help.html'">Помощь</div>
+        </div>
+        <div class="cont_btn">
+            <div class="btn_korz"  onclick="location.href='Korzina.html'">
+                <img src="../image/Shop.svg" alt="Карзина" width="40px" height="30px">
+            </div>
+            <div class="btn_burger" onclick="document.getElementsByClassName('burger').item(0).style = 'display:grid'; document.getElementsByClassName('btn_burger').item(0).style = 'display:none'">
+                <img src="../image/burger.svg" alt="Корзина" width="40px" height="30px">
+            </div>
+        </div>
+    </header >
+    <div class="burger" style="display: none">
+        <div class="btn_burger_cont">
+            <div class="btn_burger" onclick="document.getElementsByClassName('btn_burger').item(0).style = 'display:grid'; document.getElementsByClassName('burger').item(0).style = 'display:none'">
+                <img src="../image/burger.svg" alt="Корзина" width="40px" height="30px">
+            </div>
+        </div>
+        <div class="nav_item" onclick="location.href='../index.html'">Каталог</div>
+        <div class="nav_item" onclick="location.href='Onas.html'">О нас</div>
+        <div class="nav_item" onclick="location.href='Kontakts.html'">Контакты</div>
+        <div class="nav_item" onclick="location.href='Help.html'">Помощь</div>
+    </div>
+    <div class="content_korz">
+        <div class="items">
+            <div class="korz_item" style = "display:none">
+                <img src="" alt="" height="251px" class="im_tov">
+                <div class="name_tov"></div>
+                <div class="use_el_korz">
+                    <div class="kol_korz">
+                        <div>Кол-во:</div>
+                        <div class="cont_kol">
+                            <div class="btn_mn">-</div>
+                            <div class="kolich">1</div>
+                            <div class="btn_pl">+</div>
+                        </div>
+                    </div>
+                    <div class="zena_korz"></div>
+                </div>
+            </div>
+            <div class="korz_item" style = "display:none">
+                <img src="" alt="" height="251px" class="im_tov">
+                <div class="name_tov"></div>
+                <div class="use_el_korz">
+                    <div class="kol_korz">
+                        <div>Кол-во:</div>
+                        <div class="cont_kol">
+                            <div class="btn_mn">-</div>
+                            <div class="kolich">1</div>
+                            <div class="btn_pl">+</div>
+                        </div>
+                    </div>
+                    <div class="zena_korz"></div>
+                </div>
+            </div>
+            <div class="korz_item" style = "display:none">
+                <img src="" alt="" height="251px" class="im_tov">
+                <div class="name_tov"></div>
+                <div class="use_el_korz">
+                    <div class="kol_korz">
+                        <div>Кол-во:</div>
+                        <div class="cont_kol">
+                            <div class="btn_mn">-</div>
+                            <div class="kolich">1</div>
+                            <div class="btn_pl">+</div>
+                        </div>
+                    </div>
+                    <div class="zena_korz"></div>
+                </div>
+            </div>
+            <div class="korz_item" style = "display:none">
+                <img src="" alt="" height="251px" class="im_tov">
+                <div class="name_tov"></div>
+                <div class="use_el_korz">
+                    <div class="kol_korz">
+                        <div>Кол-во:</div>
+                        <div class="cont_kol">
+                            <div class="btn_mn">-</div>
+                            <div class="kolich">1</div>
+                            <div class="btn_pl">+</div>
+                        </div>
+                    </div>
+                    <div class="zena_korz"></div>
+                </div>
+            </div>
+            <div class="korz_item" style = "display:none">
+                <img src="" alt="" height="251px" class="im_tov">
+                <div class="name_tov"></div>
+                <div class="use_el_korz">
+                    <div class="kol_korz">
+                        <div>Кол-во:</div>
+                        <div class="cont_kol">
+                            <div class="btn_mn">-</div>
+                            <div class="kolich">1</div>
+                            <div class="btn_pl">+</div>
+                        </div>
+                    </div>
+                    <div class="zena_korz"></div>
+                </div>
+            </div>
+            <div class="korz_item" style = "display:none">
+                <img src="" alt="" height="251px" class="im_tov">
+                <div class="name_tov"></div>
+                <div class="use_el_korz">
+                    <div class="kol_korz">
+                        <div>Кол-во:</div>
+                        <div class="cont_kol">
+                            <div class="btn_mn">-</div>
+                            <div class="kolich">1</div>
+                            <div class="btn_pl">+</div>
+                        </div>
+                    </div>
+                    <div class="zena_korz"></div>
+                </div>
+            </div>
+        </div>
+        <div class="el_upr">
+            <div class="Vsego">Всего:</div>
+            <a style="text-decoration: none; color: #1a1d20" href="../docs/CHEK.txt" download>
+                <div class="btn_buy_clear" style="height: 60px" id="buy">Оформить заказ</div>
+            </a>
+            <div class="btn_buy_clear" style="height: 60px" id="clear">Очистить корзину</div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div>© 2023 MYSHOP - All rights reserved.</div>
+    </footer>
+</div>
+</body>
+</html>
