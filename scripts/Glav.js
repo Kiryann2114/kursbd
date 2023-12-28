@@ -1,4 +1,5 @@
 window.addEventListener('load', e =>{
+    localStorage.clear();
     let database_chat = JSON.parse(data_chat);
     let database = JSON.parse(data);
     if(localStorage.getItem("data")){
@@ -6,7 +7,7 @@ window.addEventListener('load', e =>{
     }
     localStorage.setItem("data",JSON.stringify(database));
 
-    for(let i=0; i<document.getElementsByClassName('name_tov').length; i=i+1){
+    for(let i=0; i<database.length; i=i+1){
         document.getElementsByClassName('name_tov').item(i).textContent = database[i].name;
         document.getElementsByClassName('name_tov').item(i).onclick = function (){
             location.href=database[i].SRC;
